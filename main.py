@@ -1,15 +1,13 @@
 import vars
 from pyrogram import Client
+from vars import BOT_TOKEN,API_ID,API_HASH
 
-
-Bot = Client(
-    vars.BOT_NAME,
-    bot_token=vars.BOT_TOKEN,
-    api_id=vars.API_ID,
-    api_hash=vars.API_HASH,
-    plugins = dict(
-        root="bot"
-    )
+app = Client(
+    "tedzo",
+    bot_token=BOT_TOKEN,
+    api_id=API_ID,
+    api_hash=API_HASH,
+    workers=100,
+    plugins=dict(root="bot")
 )
-
 Bot.run()
