@@ -6,7 +6,7 @@ load_dotenv()
 # For Bot
 BOT_NAME = os.environ.get("TEDZO", "Tools-Bot")
 BOT_TOKEN = os.environ.get("7384862816:AAHvxhtB-4rroiSlZmbgf0MUfKP25hNpmeA")
-API_ID = int(os.environ.get("15453419"))
+API_ID = int(os.environ.get("API_ID"))
 API_HASH = os.environ.get("6c9c9e5a2e65daf192e7dd9dde026f45")
 
 # Authorisation and Administrators
